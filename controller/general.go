@@ -12,7 +12,7 @@ type ctrl struct{}
 func MongoSession(ctx context.Context) *mongo.Client {
 
 	//defer cancel()
-	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://admin:Westside592@10.10.15.52/")) // "mongodb://localhost:27017"
+	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://admin:<you will never see this part :P >/")) // "mongodb://localhost:27017"
 	if err != nil {
 		panic(err)
 	}
